@@ -112,7 +112,7 @@ function Player({ playerRef, running }) {
  * spawn line once it passes the player. Every frame we also run a simple
  * distance-based collision test against the player.
  */
-function Obstacles({ playerRef, running, onCollision }) {
+function Obstacles({ playerRef, running, onCollision, onScore }) {
   // One ref per obstacle mesh so we can move them imperatively each frame.
   const meshRefs = useRef([]);
 
@@ -136,9 +136,11 @@ function Obstacles({ playerRef, running, onCollision }) {
       obstacle.z += OBSTACLE_SPEED * delta;
 
       // Recycle it back to the spawn line with a fresh lane once it's behind us.
+      // Reaching this point means the player successfully dodged it: score +1.
       if (obstacle.z > OBSTACLE_DESPAWN_Z) {
         obstacle.z = OBSTACLE_SPAWN_Z;
         obstacle.x = randomLaneX();
+        onScore();
       }
 
       // Push the data onto the actual mesh.
@@ -175,7 +177,7 @@ function Obstacles({ playerRef, running, onCollision }) {
  * Keeping the ref here (rather than inside `Player`) lets the obstacle logic
  * read the live player position without lifting it into React state.
  */
-function Game({ running, onCollision }) {
+function Game({ running, onCollision, onScore }) {
   const playerRef = useRef();
 
   return (
@@ -185,12 +187,13 @@ function Game({ running, onCollision }) {
         playerRef={playerRef}
         running={running}
         onCollision={onCollision}
+        onScore={onScore}
       />
     </>
   );
 }
 
-function Scene({ running, onCollision }) {
+function Scene({ runKey, running, onCollision, onScore }) {
   return (
     <>
       <ambientLight intensity={0.5} />
@@ -209,7 +212,14 @@ function Scene({ running, onCollision }) {
         <planeGeometry args={[40, 80]} />
         <meshStandardMaterial color="#1f2937" />
       </mesh>
-      <Game running={running} onCollision={onCollision} />
+      {/* Changing `runKey` remounts the whole game, which resets the player to
+          the center and re-seeds the obstacles — that's our "restart". */}
+      <Game
+        key={runKey}
+        running={running}
+        onCollision={onCollision}
+        onScore={onScore}
+      />
     </>
   );
 }
@@ -231,18 +241,51 @@ function GameCamera() {
   );
 }
 
+/** 2D HUD overlay rendered on top of (outside) the Canvas. */
+function Hud({ score, gameOver, onRestart }) {
+  return (
+    <div style={styles.hud}>
+      {/* Live score, always visible in the top-left corner. */}
+      <div style={styles.score}>Score: {score}</div>
+
+      {/* Full-screen Game Over panel with a restart button. */}
+      {gameOver && (
+        <div style={styles.overlay}>
+          <div style={styles.panel}>
+            <h1 style={styles.title}>Game Over</h1>
+            <p style={styles.finalScore}>Final score: {score}</p>
+            <button style={styles.button} onClick={onRestart}>
+              Restart
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function App() {
-  // The game freezes when a collision flips this to true. The score HUD and the
-  // Game Over / Restart overlay that read this state come in the next step.
+  // The game freezes when a collision flips this to true.
   const [gameOver, setGameOver] = useState(false);
+  // Number of obstacles the player has dodged so far.
+  const [score, setScore] = useState(0);
+  // Bumping this remounts the game subtree to reset player + obstacles.
+  const [runKey, setRunKey] = useState(0);
 
   // Wrapped in `useCallback` so the identity is stable across frames. The guard
   // makes it idempotent: the first hit ends the game and later hits are ignored.
   const handleCollision = useCallback(() => {
-    setGameOver((over) => {
-      if (!over) console.log("Collision detected — game over");
-      return true;
-    });
+    setGameOver(true);
+  }, []);
+
+  const handleScore = useCallback(() => {
+    setScore((current) => current + 1);
+  }, []);
+
+  const handleRestart = useCallback(() => {
+    setScore(0);
+    setGameOver(false);
+    setRunKey((key) => key + 1);
   }, []);
 
   return (
@@ -250,8 +293,15 @@ export default function App() {
       <Canvas shadows>
         <color attach="background" args={["#0f172a"]} />
         <GameCamera />
-        <Scene running={!gameOver} onCollision={handleCollision} />
+        <Scene
+          runKey={runKey}
+          running={!gameOver}
+          onCollision={handleCollision}
+          onScore={handleScore}
+        />
       </Canvas>
+
+      <Hud score={score} gameOver={gameOver} onRestart={handleRestart} />
     </div>
   );
 }
@@ -261,5 +311,58 @@ const styles = {
     position: "fixed",
     inset: 0,
     background: "#0f172a"
+  },
+  // The HUD layer sits above the canvas but lets clicks pass through, so only
+  // the interactive parts (the button) actually capture pointer events.
+  hud: {
+    position: "absolute",
+    inset: 0,
+    pointerEvents: "none",
+    fontFamily: "system-ui, sans-serif",
+    color: "#e2e8f0"
+  },
+  score: {
+    position: "absolute",
+    top: 20,
+    left: 24,
+    fontSize: 24,
+    fontWeight: 700,
+    textShadow: "0 1px 3px rgba(0,0,0,0.6)"
+  },
+  overlay: {
+    position: "absolute",
+    inset: 0,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    background: "rgba(15, 23, 42, 0.75)",
+    pointerEvents: "auto"
+  },
+  panel: {
+    textAlign: "center",
+    padding: "40px 56px",
+    borderRadius: 16,
+    background: "#1e293b",
+    boxShadow: "0 20px 50px rgba(0,0,0,0.5)"
+  },
+  title: {
+    margin: 0,
+    fontSize: 44,
+    color: "#f43f5e"
+  },
+  finalScore: {
+    margin: "16px 0 28px",
+    fontSize: 20,
+    color: "#cbd5e1"
+  },
+  button: {
+    padding: "12px 32px",
+    fontSize: 18,
+    fontWeight: 700,
+    color: "#0f172a",
+    background: "#38bdf8",
+    border: "none",
+    borderRadius: 10,
+    cursor: "pointer"
   }
 };
