@@ -27,7 +27,7 @@ Then open the printed local URL (default: http://localhost:5173).
 ## Roadmap
 
 - [x] Project scaffolding (R3F + drei)
-- [ ] Scene: camera, ground plane, lighting & shadows
+- [x] Scene: camera, ground plane, lighting & shadows
 - [ ] Keyboard-controlled player
 - [ ] Game loop with moving obstacles
 - [ ] Distance-based collision detection
