@@ -2,6 +2,10 @@
 
 A basic 3D obstacle avoider game built with **React Three Fiber** and **@react-three/drei**, developed as part of the i2i Academy internship assignment.
 
+**▶ [Play it live](https://nuhregaibunsal.github.io/i2i-Academy-ThreeJS-12/)**
+
+![Gameplay](docs/gameplay.png)
+
 ## Tech Stack
 
 - React 18 + Vite
@@ -28,7 +32,7 @@ Then open the printed local URL (default: http://localhost:5173).
 
 - [x] Project scaffolding (R3F + drei)
 - [x] Scene: camera, ground plane, lighting & shadows
-- [ ] Keyboard-controlled player
-- [ ] Game loop with moving obstacles
-- [ ] Distance-based collision detection
-- [ ] Score & Game Over / Restart UI
+- [x] Keyboard-controlled player
+- [x] Game loop with moving obstacles
+- [x] Distance-based collision detection
+- [x] Score & Game Over / Restart UI
