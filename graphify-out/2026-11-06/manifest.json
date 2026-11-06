@@ -1,0 +1,68 @@
+{
+  "package.json": {
+    "mtime": 1793923165.5427313,
+    "seen": 1793923296.0994046,
+    "ast_hash": "00df1f86bcceb8419fdad8b67b9659a0",
+    "semantic_hash": ""
+  },
+  "src/App.jsx": {
+    "mtime": 1793921839.1997204,
+    "seen": 1793923296.0994081,
+    "ast_hash": "9c76ea18aa844f1588283002d3dd9e08",
+    "semantic_hash": ""
+  },
+  "src/game/audio.js": {
+    "mtime": 1793923294.5320399,
+    "seen": 1793923296.0994098,
+    "ast_hash": "bb1eb1a7b64f251cf1b25914e00c9cb3",
+    "semantic_hash": ""
+  },
+  "src/game/state.js": {
+    "mtime": 1793923294.4498668,
+    "seen": 1793923296.099411,
+    "ast_hash": "7cba482bf187e887395d38d617966887",
+    "semantic_hash": ""
+  },
+  "src/main.jsx": {
+    "mtime": 1793921839.2007349,
+    "seen": 1793923296.0994117,
+    "ast_hash": "ee132c65752e87498b759faf5df175d1",
+    "semantic_hash": ""
+  },
+  "vite.config.js": {
+    "mtime": 1793921885.5858796,
+    "seen": 1793923296.0994124,
+    "ast_hash": "c1b2af93884d0068194c986149c99fc9",
+    "semantic_hash": ""
+  },
+  ".github/workflows/deploy.yml": {
+    "mtime": 1793921885.6937597,
+    "seen": 1793923296.0994132,
+    "ast_hash": "8bd4cee03973239b04afd53d86781f4b",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1793921915.4135427,
+    "seen": 1793923296.099414,
+    "ast_hash": "31dafb0884dc0d55202897fb2d9e12d1",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1793921839.196855,
+    "seen": 1793923296.0994146,
+    "ast_hash": "837fd126f347967af30aadef539bde89",
+    "semantic_hash": ""
+  },
+  "docs/gameplay.png": {
+    "mtime": 1793921937.034948,
+    "seen": 1793923296.0994153,
+    "ast_hash": "a600105cc27225c88a51faa4916c917e",
+    "semantic_hash": ""
+  },
+  "src/game/World.jsx": {
+    "mtime": 1793923397.456515,
+    "seen": 1793923398.929975,
+    "ast_hash": "0ede029b6659f31f767945442a2bab46",
+    "semantic_hash": ""
+  }
+}
