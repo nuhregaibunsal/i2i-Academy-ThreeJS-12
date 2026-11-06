@@ -52,8 +52,10 @@ export function Bullets({ state }) {
       color={C.bullet}
       geometry={<boxGeometry args={[0.1, 0.1, 1.1]} />}
       place={(d, b) => {
-        d.position.set(b.x, 0.6, b.z);
-        d.rotation.set(0, Math.atan2(-b.vx, 78), 0);
+        // while the boss is out, shots arc up toward it
+        const rise = state.boss.active ? Math.min(1, Math.max(0, (4 - b.z) / (4 - state.boss.z))) * 5 : 0;
+        d.position.set(b.x, 0.6 + rise, b.z);
+        d.rotation.set(state.boss.active ? 0.25 : 0, Math.atan2(-b.vx, 78), 0);
         d.scale.setScalar(1);
       }}
     />
@@ -67,7 +69,9 @@ export function EnemyShots({ state }) {
       color={C.shot}
       geometry={<sphereGeometry args={[0.3, 10, 10]} />}
       place={(d, s) => {
-        d.position.set(s.x, 0.7, s.z);
+        // boss shots start high at the boss and drop to ship height
+        const k = Math.min(1, Math.max(0, (4 - s.z) / (4 - state.boss.z || 19)));
+        d.position.set(s.x, 0.7 + k * 4.8, s.z);
         d.rotation.set(0, 0, 0);
         d.scale.setScalar(1);
       }}
@@ -140,7 +144,8 @@ export function Boss({ state }) {
     if (!g) return;
     g.visible = b.active;
     if (!b.active) return;
-    g.position.set(b.x, 3.4 + Math.sin(b.t * 1.3) * 0.3, b.z);
+    // flies high so walls still on the track pass underneath it
+    g.position.set(b.x, 5.6 + Math.sin(b.t * 1.3) * 0.3, b.z);
     g.scale.setScalar(b.flash > 0 ? 1.9 : 1.8);
     g.rotation.y = b.t * 0.4;
     ring.current.rotation.set(Math.PI / 2 + Math.sin(b.t) * 0.3, 0, b.t * 1.5);

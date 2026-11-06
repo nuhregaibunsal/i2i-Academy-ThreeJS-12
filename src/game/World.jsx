@@ -7,7 +7,7 @@ import {
   MAX_SPEED, PLAYER_Z, SPAWN_Z, START_SPEED, TRACK_HALF_WIDTH, difficulty
 } from "./state.js";
 import { sfx } from "./audio.js";
-import { hurtPlayer, updateCombat } from "./combat.js";
+import { hurtPlayer, spawnWave, updateCombat } from "./combat.js";
 
 const PINK = new THREE.Color("#ff3cac");
 const CYAN = new THREE.Color("#22d3ee");
@@ -72,8 +72,12 @@ function spawnPattern(s) {
 
   const gapDistance = lerp(26, 13, d) + extra;
 
-  // a trail of orbs between this pattern and the next
-  if (Math.random() < 0.65) {
+  // the free band between this pattern and the next holds either an enemy wave or a crystal trail
+  const freeCenter = z - extra - (gapDistance - extra) / 2;
+  if (s.pendingWave && !s.boss.active) {
+    spawnWave(s, freeCenter);
+    s.pendingWave = false;
+  } else if (Math.random() < 0.65) {
     const count = 4;
     const x0 = rand(-LANE_LIMIT + 1, LANE_LIMIT - 1);
     const wave = rand(-0.8, 0.8);

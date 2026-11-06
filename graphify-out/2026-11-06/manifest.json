@@ -82,5 +82,11 @@
     "seen": 1793925386.383569,
     "ast_hash": "1aa53b722ebab830a35e5ac0227812f0",
     "semantic_hash": ""
+  },
+  "src/game/Combat.jsx": {
+    "mtime": 1793925418.3129368,
+    "seen": 1793925420.7366061,
+    "ast_hash": "6c8cf40c993166797b3c80b25ca52ce5",
+    "semantic_hash": ""
   }
 }

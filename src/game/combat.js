@@ -37,6 +37,7 @@ export function createCombat() {
     kills: 0,
     playTime: 0,
     untilEnemy: 45,
+    pendingWave: false, // the obstacle spawner places the wave in the next free gap
     toast: null // { text, color, t }
   };
 }
@@ -81,22 +82,22 @@ function addEnemy(s, type, x, z, hp) {
   Object.assign(e, { active: true, type, x, baseX: x, z, hp, t: Math.random() * 6, flash: 0 });
 }
 
-function spawnWave(s) {
+/** Spawns a wave centred on z. Waves stay shallow (< 4 units deep) so they fit between obstacle rows. */
+export function spawnWave(s, z) {
   const d = difficulty(s);
   const r = Math.random();
-  const z = SPAWN_Z + 20;
   if (r < 0.5) {
     const n = 3 + Math.floor(d * 3);
     const cx = rand(-LANE_LIMIT + 2, LANE_LIMIT - 2);
     const mid = (n - 1) / 2;
     for (let i = 0; i < n; i++) {
-      addEnemy(s, "drone", clampLane(cx + (i - mid) * 1.7), z - Math.abs(i - mid) * 3, d > 0.55 ? 2 : 1);
+      addEnemy(s, "drone", clampLane(cx + (i - mid) * 1.7), z + 1.5 - Math.abs(i - mid) * 1.2, d > 0.55 ? 2 : 1);
     }
   } else if (r < 0.78) {
-    addEnemy(s, "diver", -2.8, z, 2);
-    addEnemy(s, "diver", 2.8, z - 6, 2);
+    addEnemy(s, "diver", -2.8, z + 1.5, 2);
+    addEnemy(s, "diver", 2.8, z - 1.5, 2);
   } else {
-    addEnemy(s, "tank", rand(-3, 3), z, 6 + Math.round(d * 6));
+    addEnemy(s, "tank", rand(-3, 3), z, 4 + Math.round(d * 5));
   }
 }
 
@@ -192,7 +193,7 @@ export function updateCombat(s, dt, move, playing, onGameOver) {
     if (!boss.active) {
       s.untilEnemy -= move;
       if (s.untilEnemy <= 0) {
-        spawnWave(s);
+        s.pendingWave = true;
         s.untilEnemy = lerp(60, 30, d);
       }
     }
@@ -279,15 +280,15 @@ export function updateCombat(s, dt, move, playing, onGameOver) {
     e.t += dt;
     e.flash = Math.max(0, e.flash - dt);
     if (e.type === "drone") {
-      // cruise in fast, then slow down to hover in front of the ship
-      e.z += move * (e.z < -45 ? 0.95 : 0.45);
+      // enemies ride with the track (same speed as walls) so they never drift through them
+      e.z += move;
       e.x = clampLane(e.baseX + Math.sin(e.t * 2.2) * 1.3);
     } else if (e.type === "diver") {
       const diving = e.z > -38;
-      e.z += move * (diving ? 1.1 : 0.8);
+      e.z += move;
       if (diving) e.x = clampLane(e.x + Math.sign(p.x - e.x) * Math.min(Math.abs(p.x - e.x), 7 * dt));
     } else {
-      e.z += move * (e.z < -45 ? 0.85 : 0.3);
+      e.z += move;
       e.x = clampLane(e.baseX + Math.sin(e.t * 0.8) * 1.0);
     }
     if (e.z > DESPAWN_Z) {
