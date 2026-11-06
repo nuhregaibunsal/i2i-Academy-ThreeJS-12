@@ -49,6 +49,37 @@ export const sfx = {
       tone({ type: "triangle", from: f, to: f * 0.98, duration: 0.22, volume: 0.12, delay: i * 0.13 })
     );
   },
+  shoot() {
+    tone({ type: "square", from: 1400, to: 700, duration: 0.05, volume: 0.025 });
+  },
+  enemyHit() {
+    tone({ type: "square", from: 500, to: 380, duration: 0.05, volume: 0.04 });
+  },
+  kill(big) {
+    tone({ type: "sawtooth", from: big ? 300 : 520, to: 60, duration: big ? 0.4 : 0.22, volume: big ? 0.14 : 0.09 });
+  },
+  power() {
+    [523, 659, 784, 1047].forEach((f, i) =>
+      tone({ type: "triangle", from: f, to: f, duration: 0.09, volume: 0.1, delay: i * 0.05 })
+    );
+  },
+  shield() {
+    tone({ type: "sine", from: 900, to: 200, duration: 0.3, volume: 0.15 });
+  },
+  alarm() {
+    for (let i = 0; i < 3; i++) {
+      tone({ type: "sawtooth", from: 440, to: 660, duration: 0.25, volume: 0.09, delay: i * 0.35 });
+    }
+  },
+  bossShot() {
+    tone({ type: "square", from: 260, to: 140, duration: 0.12, volume: 0.05 });
+  },
+  bossDown() {
+    tone({ type: "sawtooth", from: 400, to: 30, duration: 1.0, volume: 0.2 });
+    [523, 659, 784, 1047, 1319].forEach((f, i) =>
+      tone({ type: "triangle", from: f, to: f, duration: 0.12, volume: 0.1, delay: 0.5 + i * 0.08 })
+    );
+  },
   setMuted(value) {
     muted = value;
   },

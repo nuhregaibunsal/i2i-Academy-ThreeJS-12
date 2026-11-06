@@ -1,8 +1,8 @@
 # Driftline — a neon runner
 
-A synthwave endless runner built with **React Three Fiber**. Steer your ship down a glowing
-grid, thread through walls, chain crystal pickups for a score multiplier and see how long
-you can last as the speed keeps climbing.
+A synthwave endless runner and shooter built with **React Three Fiber**. Steer your ship down a
+glowing grid, thread through walls, blast enemy swarms, power up your weapon and take down the
+Sentinel boss — all while the speed keeps climbing.
 
 **▶ [Play it live](https://nuhregaibunsal.github.io/i2i-Academy-ThreeJS-12/)** — works on desktop and mobile.
 
@@ -16,6 +16,10 @@ you can last as the speed keeps climbing.
 - **Synthwave world** — scrolling neon grid (custom GLSL shader), striped retro sun, wireframe mountains, starfield and bloom post-processing
 - **Speed ramp** — the track accelerates over time and obstacle patterns get tighter
 - **Obstacle patterns** — pillars, double pillars, walls with a single gap and slaloms
+- **Auto-fire combat** — five weapon levels (single → twin → spread → quad → 5-way fan); walls absorb bullets
+- **Enemies** — swaying drones, divers that home in on you, and armoured tanks that take a beating
+- **Sentinel boss** — arrives at 40 s and roughly every minute after, with a health bar, aimed spread shots and an enraged second phase
+- **Power-ups** dropped by enemies — weapon +1, rapid fire, shield bubble and extra life; getting hit costs a weapon level
 - **Crystals & combo** — every 5 crystals in a row raise the multiplier (up to ×5); getting hit resets it
 - **3 lives** with invulnerability frames, camera shake and particle explosions
 - **Juice** — ship banking, engine exhaust particles, speed-based FOV, synthesized sound effects (Web Audio, no asset files)

@@ -7,11 +7,13 @@ import {
   MAX_SPEED, PLAYER_Z, SPAWN_Z, START_SPEED, TRACK_HALF_WIDTH, difficulty
 } from "./state.js";
 import { sfx } from "./audio.js";
+import { hurtPlayer, updateCombat } from "./combat.js";
 
 const PINK = new THREE.Color("#ff3cac");
 const CYAN = new THREE.Color("#22d3ee");
 const GOLD = new THREE.Color("#fde047");
 const ORANGE = new THREE.Color("#fb923c");
+const TMP = new THREE.Color();
 const EDGE_PINK = new THREE.Color(3.2, 0.7, 2.1);
 const EDGE_CYAN = new THREE.Color(0.6, 2.6, 3.2);
 const EDGE_WING = new THREE.Color(2.6, 0.5, 1.8);
@@ -130,7 +132,8 @@ export function GameLoop({ state, phase, onHud, onGameOver }) {
 
     if (playing) {
       s.untilSpawn -= move;
-      if (s.untilSpawn <= 0) s.untilSpawn = spawnPattern(s);
+      // the track stays clear while the boss is out
+      if (s.untilSpawn <= 0) s.untilSpawn = s.boss.active ? 10 : spawnPattern(s);
       s.score += move * 0.5 * s.multiplier;
     }
 
@@ -149,18 +152,7 @@ export function GameLoop({ state, phase, onHud, onGameOver }) {
         Math.abs(p.x - o.x) < o.w / 2 + 0.55 &&
         Math.abs(PLAYER_Z - o.z) < o.d / 2 + 0.7
       ) {
-        s.lives -= 1;
-        s.invulnerable = INVULNERABLE_TIME;
-        s.shake = 0.7;
-        s.multiplier = 1;
-        s.orbStreak = 0;
-        s.events.push({ type: "hit", x: p.x });
-        sfx.hit();
-        if (s.lives <= 0) {
-          s.events.push({ type: "explode", x: p.x });
-          sfx.over();
-          onGameOver(Math.floor(s.score));
-        }
+        hurtPlayer(s, onGameOver);
       }
     }
 
@@ -180,6 +172,8 @@ export function GameLoop({ state, phase, onHud, onGameOver }) {
         sfx.pickup(s.multiplier);
       }
     }
+
+    updateCombat(s, dt, move, playing, onGameOver);
 
     // --- camera: follows the ship, widens with speed, shakes on hits
     const d = difficulty(s);
@@ -212,7 +206,13 @@ export function GameLoop({ state, phase, onHud, onGameOver }) {
         streak: s.orbStreak,
         lives: s.lives,
         speed: s.speed,
-        progress: d
+        progress: d,
+        weapon: s.weapon.level,
+        rapid: s.weapon.rapid,
+        shield: s.weapon.shield,
+        kills: s.kills,
+        boss: s.boss.active ? s.boss.hp / s.boss.maxHp : null,
+        toast: s.toast ? { text: s.toast.text, color: s.toast.color } : null
       });
     }
   });
@@ -354,6 +354,15 @@ export function Particles({ state, phase }) {
         for (let i = 0; i < 14; i++) {
           const a = Math.random() * Math.PI * 2;
           emit(e.x, 0.9, e.z, Math.cos(a) * 4, Math.sin(a) * 4, s.speed * 0.5, 0.4, 0.09, GOLD);
+        }
+      } else if (e.type === "burst") {
+        TMP.set(e.color);
+        TMP.r *= 2.6; TMP.g *= 2.6; TMP.b *= 2.6;
+        for (let i = 0; i < e.n; i++) {
+          const a = Math.random() * Math.PI * 2;
+          const el = rand(-0.6, 1);
+          const sp = rand(0.4, 1) * e.speed;
+          emit(e.x, e.y, e.z, Math.cos(a) * sp, el * sp * 0.7 + 1.5, Math.sin(a) * sp, rand(0.5, 1) * e.life, rand(0.07, 0.17), TMP);
         }
       } else if (e.type === "hit" || e.type === "explode") {
         const n = e.type === "explode" ? 90 : 40;

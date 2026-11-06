@@ -9,7 +9,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "state.js",
+      "community_name": "Hud.jsx",
       "file_type": "code",
       "norm_label": "heart()",
       "source_file": "src/Hud.jsx",
@@ -21,7 +21,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "state.js",
+      "community_name": "Hud.jsx",
       "file_type": "code",
       "norm_label": "hud()",
       "source_file": "src/Hud.jsx",
@@ -33,7 +33,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "state.js",
+      "community_name": "Hud.jsx",
       "file_type": "code",
       "norm_label": "stop()",
       "source_file": "src/Hud.jsx",
@@ -76,6 +76,30 @@
       "source_location": "L20"
     },
     {
+      "id": "src_game_audio_audio",
+      "label": "audio()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "App.jsx",
+      "file_type": "code",
+      "norm_label": "audio()",
+      "source_file": "src/game/audio.js",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_game_audio_tone",
+      "label": "tone()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "App.jsx",
+      "file_type": "code",
+      "norm_label": "tone()",
+      "source_file": "src/game/audio.js",
+      "source_location": "L16"
+    },
+    {
       "id": "src_game_state_createstate",
       "label": "createState()",
       "_callable": true,
@@ -100,6 +124,42 @@
       "source_location": "L44"
     },
     {
+      "id": "src_game_world_floor",
+      "label": "Floor()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "App.jsx",
+      "file_type": "code",
+      "norm_label": "floor()",
+      "source_file": "src/game/World.jsx",
+      "source_location": "L438"
+    },
+    {
+      "id": "src_game_world_mountains",
+      "label": "Mountains()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "App.jsx",
+      "file_type": "code",
+      "norm_label": "mountains()",
+      "source_file": "src/game/World.jsx",
+      "source_location": "L508"
+    },
+    {
+      "id": "src_game_world_obstacles",
+      "label": "Obstacles()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "App.jsx",
+      "file_type": "code",
+      "norm_label": "obstacles()",
+      "source_file": "src/game/World.jsx",
+      "source_location": "L269"
+    },
+    {
       "id": "src_game_world_orbs",
       "label": "Orbs()",
       "_callable": true,
@@ -109,7 +169,7 @@
       "file_type": "code",
       "norm_label": "orbs()",
       "source_file": "src/game/World.jsx",
-      "source_location": "L285"
+      "source_location": "L291"
     },
     {
       "id": "src_game_world_rails",
@@ -121,7 +181,7 @@
       "file_type": "code",
       "norm_label": "rails()",
       "source_file": "src/game/World.jsx",
-      "source_location": "L451"
+      "source_location": "L457"
     },
     {
       "id": "src_game_world_ship",
@@ -133,7 +193,31 @@
       "file_type": "code",
       "norm_label": "ship()",
       "source_file": "src/game/World.jsx",
-      "source_location": "L219"
+      "source_location": "L225"
+    },
+    {
+      "id": "src_game_world_sky",
+      "label": "Sky()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "App.jsx",
+      "file_type": "code",
+      "norm_label": "sky()",
+      "source_file": "src/game/World.jsx",
+      "source_location": "L534"
+    },
+    {
+      "id": "src_game_world_sun",
+      "label": "Sun()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "App.jsx",
+      "file_type": "code",
+      "norm_label": "sun()",
+      "source_file": "src/game/World.jsx",
+      "source_location": "L494"
     },
     {
       "id": "src_game_state_difficulty",
@@ -157,7 +241,7 @@
       "file_type": "code",
       "norm_label": "addobstacle()",
       "source_file": "src/game/World.jsx",
-      "source_location": "L21"
+      "source_location": "L24"
     },
     {
       "id": "src_game_world_addorb",
@@ -169,19 +253,7 @@
       "file_type": "code",
       "norm_label": "addorb()",
       "source_file": "src/game/World.jsx",
-      "source_location": "L27"
-    },
-    {
-      "id": "src_game_world_floor",
-      "label": "Floor()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "World.jsx",
-      "file_type": "code",
-      "norm_label": "floor()",
-      "source_file": "src/game/World.jsx",
-      "source_location": "L432"
+      "source_location": "L30"
     },
     {
       "id": "src_game_world_gameloop",
@@ -193,7 +265,7 @@
       "file_type": "code",
       "norm_label": "gameloop()",
       "source_file": "src/game/World.jsx",
-      "source_location": "L89"
+      "source_location": "L92"
     },
     {
       "id": "src_game_world_lerp",
@@ -205,31 +277,7 @@
       "file_type": "code",
       "norm_label": "lerp()",
       "source_file": "src/game/World.jsx",
-      "source_location": "L16"
-    },
-    {
-      "id": "src_game_world_mountains",
-      "label": "Mountains()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "World.jsx",
-      "file_type": "code",
-      "norm_label": "mountains()",
-      "source_file": "src/game/World.jsx",
-      "source_location": "L502"
-    },
-    {
-      "id": "src_game_world_obstacles",
-      "label": "Obstacles()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "World.jsx",
-      "file_type": "code",
-      "norm_label": "obstacles()",
-      "source_file": "src/game/World.jsx",
-      "source_location": "L263"
+      "source_location": "L19"
     },
     {
       "id": "src_game_world_particles",
@@ -241,7 +289,7 @@
       "file_type": "code",
       "norm_label": "particles()",
       "source_file": "src/game/World.jsx",
-      "source_location": "L311"
+      "source_location": "L317"
     },
     {
       "id": "src_game_world_rand",
@@ -253,19 +301,7 @@
       "file_type": "code",
       "norm_label": "rand()",
       "source_file": "src/game/World.jsx",
-      "source_location": "L17"
-    },
-    {
-      "id": "src_game_world_sky",
-      "label": "Sky()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "World.jsx",
-      "file_type": "code",
-      "norm_label": "sky()",
-      "source_file": "src/game/World.jsx",
-      "source_location": "L528"
+      "source_location": "L20"
     },
     {
       "id": "src_game_world_spawnpattern",
@@ -277,204 +313,336 @@
       "file_type": "code",
       "norm_label": "spawnpattern()",
       "source_file": "src/game/World.jsx",
-      "source_location": "L34"
+      "source_location": "L37"
     },
     {
-      "id": "src_game_world_sun",
-      "label": "Sun()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "World.jsx",
-      "file_type": "code",
-      "norm_label": "sun()",
-      "source_file": "src/game/World.jsx",
-      "source_location": "L488"
-    },
-    {
-      "id": "src_game_audio_audio",
-      "label": "audio()",
+      "id": "src_game_combat_boss",
+      "label": "Boss()",
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "audio.js",
+      "community_name": "Combat.jsx",
       "file_type": "code",
-      "norm_label": "audio()",
-      "source_file": "src/game/audio.js",
-      "source_location": "L6"
+      "norm_label": "boss()",
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L131"
     },
     {
-      "id": "src_game_audio_tone",
-      "label": "tone()",
+      "id": "src_game_combat_bullets",
+      "label": "Bullets()",
       "_callable": true,
       "_origin": "ast",
       "community": 6,
-      "community_name": "audio.js",
+      "community_name": "Combat.jsx",
       "file_type": "code",
-      "norm_label": "tone()",
-      "source_file": "src/game/audio.js",
-      "source_location": "L16"
+      "norm_label": "bullets()",
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L48"
     },
     {
-      "id": "src_game_state",
-      "label": "state.js",
+      "id": "src_game_combat_enemies",
+      "label": "Enemies()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "state.js",
+      "community": 6,
+      "community_name": "Combat.jsx",
       "file_type": "code",
-      "norm_label": "state.js",
-      "source_file": "src/game/state.js",
-      "source_location": "L1"
+      "norm_label": "enemies()",
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L125"
     },
     {
-      "id": "src_game_state_acceleration",
-      "label": "ACCELERATION",
+      "id": "src_game_combat_enemyshots",
+      "label": "EnemyShots()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "state.js",
+      "community": 6,
+      "community_name": "Combat.jsx",
       "file_type": "code",
-      "norm_label": "acceleration",
-      "source_file": "src/game/state.js",
-      "source_location": "L13"
+      "norm_label": "enemyshots()",
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L63"
     },
     {
-      "id": "src_game_state_despawn_z",
-      "label": "DESPAWN_Z",
+      "id": "src_game_combat_enemyslot",
+      "label": "EnemySlot()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "state.js",
+      "community": 6,
+      "community_name": "Combat.jsx",
       "file_type": "code",
-      "norm_label": "despawn_z",
-      "source_file": "src/game/state.js",
+      "norm_label": "enemyslot()",
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L80"
+    },
+    {
+      "id": "src_game_combat_hdr",
+      "label": "hdr()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Combat.jsx",
+      "file_type": "code",
+      "norm_label": "hdr()",
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_game_combat_instances",
+      "label": "Instances()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Combat.jsx",
+      "file_type": "code",
+      "norm_label": "instances()",
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "src_game_combat_pickups",
+      "label": "Pickups()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Combat.jsx",
+      "file_type": "code",
+      "norm_label": "pickups()",
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L229"
+    },
+    {
+      "id": "src_game_combat_pickupslot",
+      "label": "PickupSlot()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Combat.jsx",
+      "file_type": "code",
+      "norm_label": "pickupslot()",
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L178"
+    },
+    {
+      "id": "src_game_combat_shieldbubble",
+      "label": "ShieldBubble()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Combat.jsx",
+      "file_type": "code",
+      "norm_label": "shieldbubble()",
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L235"
+    },
+    {
+      "id": "src_game_combat_addenemy",
+      "label": "addEnemy()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "addenemy()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L78"
+    },
+    {
+      "id": "src_game_combat_applypickup",
+      "label": "applyPickup()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "applypickup()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L120"
+    },
+    {
+      "id": "src_game_combat_clamplane",
+      "label": "clampLane()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "clamplane()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L9"
+    },
+    {
+      "id": "src_game_combat_createcombat",
+      "label": "createCombat()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "createcombat()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L27"
+    },
+    {
+      "id": "src_game_combat_droppickup",
+      "label": "dropPickup()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "droppickup()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L103"
+    },
+    {
+      "id": "src_game_combat_fire",
+      "label": "fire()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "fire()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L153"
+    },
+    {
+      "id": "src_game_combat_hurtplayer",
+      "label": "hurtPlayer()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "hurtplayer()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L49"
+    },
+    {
+      "id": "src_game_combat_killenemy",
+      "label": "killEnemy()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "killenemy()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L164"
+    },
+    {
+      "id": "src_game_combat_lerp",
+      "label": "lerp()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "lerp()",
+      "source_file": "src/game/combat.js",
       "source_location": "L8"
     },
     {
-      "id": "src_game_state_invulnerable_time",
-      "label": "INVULNERABLE_TIME",
+      "id": "src_game_combat_pool",
+      "label": "pool()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "state.js",
+      "community": 8,
+      "community_name": "combat.js",
       "file_type": "code",
-      "norm_label": "invulnerable_time",
-      "source_file": "src/game/state.js",
-      "source_location": "L16"
+      "norm_label": "pool()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L6"
     },
     {
-      "id": "src_game_state_lane_limit",
-      "label": "LANE_LIMIT",
+      "id": "src_game_combat_rand",
+      "label": "rand()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
-      "community_name": "state.js",
+      "community": 8,
+      "community_name": "combat.js",
       "file_type": "code",
-      "norm_label": "lane_limit",
-      "source_file": "src/game/state.js",
-      "source_location": "L5"
+      "norm_label": "rand()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_game_combat_spawnwave",
+      "label": "spawnWave()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "spawnwave()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L84"
+    },
+    {
+      "id": "src_game_combat_take",
+      "label": "take()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "take()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L44"
+    },
+    {
+      "id": "src_game_combat_toast",
+      "label": "toast()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "toast()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L116"
+    },
+    {
+      "id": "src_game_combat_updatecombat",
+      "label": "updateCombat()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "updatecombat()",
+      "source_file": "src/game/combat.js",
+      "source_location": "L176"
     },
     {
       "id": "src_game_state_max_lives",
       "label": "MAX_LIVES",
       "_origin": "ast",
       "community": 0,
-      "community_name": "state.js",
+      "community_name": "Hud.jsx",
       "file_type": "code",
       "norm_label": "max_lives",
       "source_file": "src/game/state.js",
       "source_location": "L15"
     },
     {
-      "id": "src_game_state_max_multiplier",
-      "label": "MAX_MULTIPLIER",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "state.js",
-      "file_type": "code",
-      "norm_label": "max_multiplier",
-      "source_file": "src/game/state.js",
-      "source_location": "L17"
-    },
-    {
       "id": "src_game_state_max_speed",
       "label": "MAX_SPEED",
       "_origin": "ast",
       "community": 0,
-      "community_name": "state.js",
+      "community_name": "Hud.jsx",
       "file_type": "code",
       "norm_label": "max_speed",
       "source_file": "src/game/state.js",
       "source_location": "L12"
     },
     {
-      "id": "src_game_state_obstacle_pool",
-      "label": "OBSTACLE_POOL",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "state.js",
-      "file_type": "code",
-      "norm_label": "obstacle_pool",
-      "source_file": "src/game/state.js",
-      "source_location": "L19"
-    },
-    {
-      "id": "src_game_state_orb_pool",
-      "label": "ORB_POOL",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "state.js",
-      "file_type": "code",
-      "norm_label": "orb_pool",
-      "source_file": "src/game/state.js",
-      "source_location": "L20"
-    },
-    {
-      "id": "src_game_state_player_z",
-      "label": "PLAYER_Z",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "state.js",
-      "file_type": "code",
-      "norm_label": "player_z",
-      "source_file": "src/game/state.js",
-      "source_location": "L9"
-    },
-    {
-      "id": "src_game_state_spawn_z",
-      "label": "SPAWN_Z",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "state.js",
-      "file_type": "code",
-      "norm_label": "spawn_z",
-      "source_file": "src/game/state.js",
-      "source_location": "L7"
-    },
-    {
-      "id": "src_game_state_start_speed",
-      "label": "START_SPEED",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "state.js",
-      "file_type": "code",
-      "norm_label": "start_speed",
-      "source_file": "src/game/state.js",
-      "source_location": "L11"
-    },
-    {
-      "id": "src_game_state_track_half_width",
-      "label": "TRACK_HALF_WIDTH",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "state.js",
-      "file_type": "code",
-      "norm_label": "track_half_width",
-      "source_file": "src/game/state.js",
-      "source_location": "L6"
-    },
-    {
       "id": "src_hud",
       "label": "Hud.jsx",
       "_origin": "ast",
       "community": 0,
-      "community_name": "state.js",
+      "community_name": "Hud.jsx",
       "file_type": "code",
       "norm_label": "hud.jsx",
       "source_file": "src/Hud.jsx",
@@ -633,6 +801,28 @@
       "norm_label": "app.jsx",
       "source_file": "src/App.jsx",
       "source_location": "L1"
+    },
+    {
+      "id": "src_game_audio",
+      "label": "audio.js",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "App.jsx",
+      "file_type": "code",
+      "norm_label": "audio.js",
+      "source_file": "src/game/audio.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_game_audio_sfx",
+      "label": "sfx",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "App.jsx",
+      "file_type": "code",
+      "norm_label": "sfx",
+      "source_file": "src/game/audio.js",
+      "source_location": "L33"
     },
     {
       "id": "src_main",
@@ -804,7 +994,7 @@
       "label": "README.md",
       "_origin": "ast",
       "community": 4,
-      "community_name": "i2i-Academy-ThreeJS-12",
+      "community_name": "Driftline \u2014 a neon runner",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "readme.md",
@@ -816,60 +1006,182 @@
       "label": "Controls",
       "_origin": "ast",
       "community": 4,
-      "community_name": "i2i-Academy-ThreeJS-12",
+      "community_name": "Driftline \u2014 a neon runner",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "controls",
       "source_file": "README.md",
-      "source_location": "L25"
+      "source_location": "L24"
     },
     {
-      "id": "readme_getting_started",
-      "label": "Getting Started",
+      "id": "readme_driftline_a_neon_runner",
+      "label": "Driftline \u2014 a neon runner",
       "_origin": "ast",
       "community": 4,
-      "community_name": "i2i-Academy-ThreeJS-12",
+      "community_name": "Driftline \u2014 a neon runner",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "getting started",
-      "source_file": "README.md",
-      "source_location": "L16"
-    },
-    {
-      "id": "readme_i2i_academy_threejs_12",
-      "label": "i2i-Academy-ThreeJS-12",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "i2i-Academy-ThreeJS-12",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "i2i-academy-threejs-12",
+      "norm_label": "driftline \u2014 a neon runner",
       "source_file": "README.md",
       "source_location": "L1"
     },
     {
-      "id": "readme_roadmap",
-      "label": "Roadmap",
+      "id": "readme_features",
+      "label": "Features",
       "_origin": "ast",
       "community": 4,
-      "community_name": "i2i-Academy-ThreeJS-12",
+      "community_name": "Driftline \u2014 a neon runner",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "roadmap",
+      "norm_label": "features",
       "source_file": "README.md",
-      "source_location": "L31"
+      "source_location": "L14"
+    },
+    {
+      "id": "readme_project_structure",
+      "label": "Project structure",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Driftline \u2014 a neon runner",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "project structure",
+      "source_file": "README.md",
+      "source_location": "L49"
+    },
+    {
+      "id": "readme_run_locally",
+      "label": "Run locally",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Driftline \u2014 a neon runner",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "run locally",
+      "source_file": "README.md",
+      "source_location": "L40"
     },
     {
       "id": "readme_tech_stack",
-      "label": "Tech Stack",
+      "label": "Tech stack",
       "_origin": "ast",
       "community": 4,
-      "community_name": "i2i-Academy-ThreeJS-12",
+      "community_name": "Driftline \u2014 a neon runner",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "tech stack",
       "source_file": "README.md",
+      "source_location": "L33"
+    },
+    {
+      "id": "src_game_state",
+      "label": "state.js",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "World.jsx",
+      "file_type": "code",
+      "norm_label": "state.js",
+      "source_file": "src/game/state.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_game_state_acceleration",
+      "label": "ACCELERATION",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "World.jsx",
+      "file_type": "code",
+      "norm_label": "acceleration",
+      "source_file": "src/game/state.js",
+      "source_location": "L13"
+    },
+    {
+      "id": "src_game_state_lane_limit",
+      "label": "LANE_LIMIT",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "World.jsx",
+      "file_type": "code",
+      "norm_label": "lane_limit",
+      "source_file": "src/game/state.js",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_game_state_max_multiplier",
+      "label": "MAX_MULTIPLIER",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "World.jsx",
+      "file_type": "code",
+      "norm_label": "max_multiplier",
+      "source_file": "src/game/state.js",
+      "source_location": "L17"
+    },
+    {
+      "id": "src_game_state_obstacle_pool",
+      "label": "OBSTACLE_POOL",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "World.jsx",
+      "file_type": "code",
+      "norm_label": "obstacle_pool",
+      "source_file": "src/game/state.js",
+      "source_location": "L19"
+    },
+    {
+      "id": "src_game_state_orb_pool",
+      "label": "ORB_POOL",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "World.jsx",
+      "file_type": "code",
+      "norm_label": "orb_pool",
+      "source_file": "src/game/state.js",
+      "source_location": "L20"
+    },
+    {
+      "id": "src_game_state_player_z",
+      "label": "PLAYER_Z",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "World.jsx",
+      "file_type": "code",
+      "norm_label": "player_z",
+      "source_file": "src/game/state.js",
       "source_location": "L9"
+    },
+    {
+      "id": "src_game_state_spawn_z",
+      "label": "SPAWN_Z",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "World.jsx",
+      "file_type": "code",
+      "norm_label": "spawn_z",
+      "source_file": "src/game/state.js",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_game_state_start_speed",
+      "label": "START_SPEED",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "World.jsx",
+      "file_type": "code",
+      "norm_label": "start_speed",
+      "source_file": "src/game/state.js",
+      "source_location": "L11"
+    },
+    {
+      "id": "src_game_state_track_half_width",
+      "label": "TRACK_HALF_WIDTH",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "World.jsx",
+      "file_type": "code",
+      "norm_label": "track_half_width",
+      "source_file": "src/game/state.js",
+      "source_location": "L6"
     },
     {
       "id": "src_game_world",
@@ -892,6 +1204,39 @@
       "norm_label": "cyan",
       "source_file": "src/game/World.jsx",
       "source_location": "L12"
+    },
+    {
+      "id": "src_game_world_edge_cyan",
+      "label": "EDGE_CYAN",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "World.jsx",
+      "file_type": "code",
+      "norm_label": "edge_cyan",
+      "source_file": "src/game/World.jsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "src_game_world_edge_pink",
+      "label": "EDGE_PINK",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "World.jsx",
+      "file_type": "code",
+      "norm_label": "edge_pink",
+      "source_file": "src/game/World.jsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "src_game_world_edge_wing",
+      "label": "EDGE_WING",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "World.jsx",
+      "file_type": "code",
+      "norm_label": "edge_wing",
+      "source_file": "src/game/World.jsx",
+      "source_location": "L17"
     },
     {
       "id": "src_game_world_gold",
@@ -927,26 +1272,37 @@
       "source_location": "L11"
     },
     {
-      "id": "src_game_audio",
-      "label": "audio.js",
+      "id": "src_game_combat_body",
+      "label": "BODY",
       "_origin": "ast",
       "community": 6,
-      "community_name": "audio.js",
+      "community_name": "Combat.jsx",
       "file_type": "code",
-      "norm_label": "audio.js",
-      "source_file": "src/game/audio.js",
-      "source_location": "L1"
+      "norm_label": "body",
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L22"
     },
     {
-      "id": "src_game_audio_sfx",
-      "label": "sfx",
+      "id": "src_game_combat_c",
+      "label": "C",
       "_origin": "ast",
       "community": 6,
-      "community_name": "audio.js",
+      "community_name": "Combat.jsx",
       "file_type": "code",
-      "norm_label": "sfx",
-      "source_file": "src/game/audio.js",
-      "source_location": "L33"
+      "norm_label": "c",
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L8"
+    },
+    {
+      "id": "src_game_combat_jsx_src_game_combat",
+      "label": "Combat.jsx",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Combat.jsx",
+      "file_type": "code",
+      "norm_label": "combat.jsx",
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L1"
     },
     {
       "id": "vite_config",
@@ -958,6 +1314,83 @@
       "norm_label": "vite.config.js",
       "source_file": "vite.config.js",
       "source_location": "L1"
+    },
+    {
+      "id": "src_game_combat_enemy",
+      "label": "ENEMY",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "enemy",
+      "source_file": "src/game/combat.js",
+      "source_location": "L14"
+    },
+    {
+      "id": "src_game_combat_js_src_game_combat",
+      "label": "combat.js",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "combat.js",
+      "source_file": "src/game/combat.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_game_combat_max_weapon",
+      "label": "MAX_WEAPON",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "max_weapon",
+      "source_file": "src/game/combat.js",
+      "source_location": "L11"
+    },
+    {
+      "id": "src_game_combat_patterns",
+      "label": "PATTERNS",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "patterns",
+      "source_file": "src/game/combat.js",
+      "source_location": "L145"
+    },
+    {
+      "id": "src_game_combat_power",
+      "label": "POWER",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "power",
+      "source_file": "src/game/combat.js",
+      "source_location": "L20"
+    },
+    {
+      "id": "src_game_state_despawn_z",
+      "label": "DESPAWN_Z",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "despawn_z",
+      "source_file": "src/game/state.js",
+      "source_location": "L8"
+    },
+    {
+      "id": "src_game_state_invulnerable_time",
+      "label": "INVULNERABLE_TIME",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "combat.js",
+      "file_type": "code",
+      "norm_label": "invulnerable_time",
+      "source_file": "src/game/state.js",
+      "source_location": "L16"
     }
   ],
   "links": [
@@ -1010,6 +1443,282 @@
       "weight": 1.0
     },
     {
+      "source": "src_game_combat_addenemy",
+      "target": "src_game_combat_take",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_applypickup",
+      "target": "src_game_combat_toast",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_createcombat",
+      "target": "src_game_combat_pool",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_droppickup",
+      "target": "src_game_combat_take",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_droppickup",
+      "target": "src_game_combat_clamplane",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_fire",
+      "target": "src_game_combat_take",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_killenemy",
+      "target": "src_game_combat_droppickup",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L171",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_spawnwave",
+      "target": "src_game_state_difficulty",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_spawnwave",
+      "target": "src_game_combat_rand",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_spawnwave",
+      "target": "src_game_combat_addenemy",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_spawnwave",
+      "target": "src_game_combat_clamplane",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_updatecombat",
+      "target": "src_game_state_difficulty",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L180",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_updatecombat",
+      "target": "src_game_combat_fire",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L187",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_updatecombat",
+      "target": "src_game_combat_spawnwave",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L195",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_updatecombat",
+      "target": "src_game_combat_lerp",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L196",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_updatecombat",
+      "target": "src_game_combat_toast",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L212",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_updatecombat",
+      "target": "src_game_combat_killenemy",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L247",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_updatecombat",
+      "target": "src_game_combat_rand",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L265",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_updatecombat",
+      "target": "src_game_combat_droppickup",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L267",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_updatecombat",
+      "target": "src_game_combat_clamplane",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L282",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_updatecombat",
+      "target": "src_game_combat_hurtplayer",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L299",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_updatecombat",
+      "target": "src_game_combat_take",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L320",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_updatecombat",
+      "target": "src_game_combat_applypickup",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/game/combat.js",
+      "source_location": "L357",
+      "weight": 1.0
+    },
+    {
       "source": "src_game_state_resetstate",
       "target": "src_game_state_createstate",
       "relation": "calls",
@@ -1030,7 +1739,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/game/World.jsx",
-      "source_location": "L104",
+      "source_location": "L107",
       "weight": 1.0
     },
     {
@@ -1042,7 +1751,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/game/World.jsx",
-      "source_location": "L115",
+      "source_location": "L118",
       "weight": 1.0
     },
     {
@@ -1054,7 +1763,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/game/World.jsx",
-      "source_location": "L130",
+      "source_location": "L133",
       "weight": 1.0
     },
     {
@@ -1066,7 +1775,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/game/World.jsx",
-      "source_location": "L338",
+      "source_location": "L344",
       "weight": 1.0
     },
     {
@@ -1078,7 +1787,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/game/World.jsx",
-      "source_location": "L35",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -1090,7 +1799,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/game/World.jsx",
-      "source_location": "L42",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -1102,7 +1811,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/game/World.jsx",
-      "source_location": "L42",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -1114,7 +1823,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/game/World.jsx",
-      "source_location": "L51",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -1126,7 +1835,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/game/World.jsx",
-      "source_location": "L58",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
@@ -1418,6 +2127,102 @@
       "weight": 1.0
     },
     {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_state_despawn_z",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/game/combat.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_state_difficulty",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/game/combat.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_state_invulnerable_time",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/game/combat.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_state_lane_limit",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/game/combat.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_state_max_lives",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/game/combat.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_state_player_z",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/game/combat.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_state_spawn_z",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/game/combat.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_audio_sfx",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/game/combat.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
       "source": "src_game_world",
       "target": "src_game_state_acceleration",
       "relation": "imports",
@@ -1643,6 +2448,30 @@
       "context": "import",
       "source_file": "src/App.jsx",
       "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_state",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/game/combat.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_audio",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/game/combat.js",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -1893,7 +2722,7 @@
     },
     {
       "source": "readme",
-      "target": "readme_i2i_academy_threejs_12",
+      "target": "readme_driftline_a_neon_runner",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1903,47 +2732,58 @@
       "weight": 1.0
     },
     {
-      "source": "readme_i2i_academy_threejs_12",
-      "target": "readme_getting_started",
+      "source": "readme_driftline_a_neon_runner",
+      "target": "readme_features",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L16",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
-      "source": "readme_i2i_academy_threejs_12",
+      "source": "readme_driftline_a_neon_runner",
       "target": "readme_controls",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L25",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
-      "source": "readme_i2i_academy_threejs_12",
-      "target": "readme_roadmap",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L31",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_i2i_academy_threejs_12",
+      "source": "readme_driftline_a_neon_runner",
       "target": "readme_tech_stack",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L9",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_driftline_a_neon_runner",
+      "target": "readme_run_locally",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_driftline_a_neon_runner",
+      "target": "readme_project_structure",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -2010,6 +2850,347 @@
       "confidence_score": 1.0,
       "source_file": "src/game/audio.js",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_droppickup",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L103",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_max_weapon",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_toast",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L116",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_applypickup",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_enemy",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_patterns",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L145",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_fire",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L153",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_killenemy",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L164",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_updatecombat",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_power",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_createcombat",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_take",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_hurtplayer",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_pool",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_rand",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_addenemy",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_lerp",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_spawnwave",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_js_src_game_combat",
+      "target": "src_game_combat_clamplane",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/combat.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_jsx_src_game_combat",
+      "target": "src_game_combat_enemies",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_jsx_src_game_combat",
+      "target": "src_game_combat_boss",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L131",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_jsx_src_game_combat",
+      "target": "src_game_combat_pickupslot",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L178",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_jsx_src_game_combat",
+      "target": "src_game_combat_body",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_jsx_src_game_combat",
+      "target": "src_game_combat_pickups",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L229",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_jsx_src_game_combat",
+      "target": "src_game_combat_shieldbubble",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L235",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_jsx_src_game_combat",
+      "target": "src_game_combat_instances",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_jsx_src_game_combat",
+      "target": "src_game_combat_bullets",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_jsx_src_game_combat",
+      "target": "src_game_combat_enemyshots",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_jsx_src_game_combat",
+      "target": "src_game_combat_hdr",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_jsx_src_game_combat",
+      "target": "src_game_combat_c",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_combat_jsx_src_game_combat",
+      "target": "src_game_combat_enemyslot",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/Combat.jsx",
+      "source_location": "L80",
       "weight": 1.0
     },
     {
@@ -2234,7 +3415,18 @@
     },
     {
       "source": "src_game_world",
-      "target": "src_game_world_lerp",
+      "target": "src_game_world_edge_pink",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/World.jsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_world",
+      "target": "src_game_world_edge_cyan",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2245,7 +3437,7 @@
     },
     {
       "source": "src_game_world",
-      "target": "src_game_world_rand",
+      "target": "src_game_world_edge_wing",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2256,13 +3448,24 @@
     },
     {
       "source": "src_game_world",
-      "target": "src_game_world_addobstacle",
+      "target": "src_game_world_lerp",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/game/World.jsx",
-      "source_location": "L21",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_world",
+      "target": "src_game_world_rand",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/World.jsx",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -2273,7 +3476,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/game/World.jsx",
-      "source_location": "L219",
+      "source_location": "L225",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_world",
+      "target": "src_game_world_addobstacle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/World.jsx",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -2284,18 +3498,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/game/World.jsx",
-      "source_location": "L263",
-      "weight": 1.0
-    },
-    {
-      "source": "src_game_world",
-      "target": "src_game_world_addorb",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/game/World.jsx",
-      "source_location": "L27",
+      "source_location": "L269",
       "weight": 1.0
     },
     {
@@ -2306,7 +3509,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/game/World.jsx",
-      "source_location": "L285",
+      "source_location": "L291",
+      "weight": 1.0
+    },
+    {
+      "source": "src_game_world",
+      "target": "src_game_world_addorb",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/World.jsx",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -2317,7 +3531,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/game/World.jsx",
-      "source_location": "L311",
+      "source_location": "L317",
       "weight": 1.0
     },
     {
@@ -2328,7 +3542,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/game/World.jsx",
-      "source_location": "L34",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -2339,7 +3553,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/game/World.jsx",
-      "source_location": "L432",
+      "source_location": "L438",
       "weight": 1.0
     },
     {
@@ -2350,7 +3564,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/game/World.jsx",
-      "source_location": "L451",
+      "source_location": "L457",
       "weight": 1.0
     },
     {
@@ -2361,7 +3575,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/game/World.jsx",
-      "source_location": "L488",
+      "source_location": "L494",
       "weight": 1.0
     },
     {
@@ -2372,7 +3586,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/game/World.jsx",
-      "source_location": "L502",
+      "source_location": "L508",
       "weight": 1.0
     },
     {
@@ -2383,7 +3597,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/game/World.jsx",
-      "source_location": "L528",
+      "source_location": "L534",
       "weight": 1.0
     },
     {
@@ -2394,7 +3608,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/game/World.jsx",
-      "source_location": "L89",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -2444,5 +3658,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6321032c480b19bc3395a64f20b534528571e370"
+  "built_at_commit": "50af1f12bd979b60fd1eff2bfaaeadd648e981e4"
 }

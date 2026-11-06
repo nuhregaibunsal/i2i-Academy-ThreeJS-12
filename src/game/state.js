@@ -2,6 +2,8 @@
 // The state lives in a plain object (not React state) because it changes every
 // frame; React only receives throttled snapshots for the HUD.
 
+import { createCombat } from "./combat.js";
+
 export const LANE_LIMIT = 5.2; // how far the ship can drift left/right
 export const TRACK_HALF_WIDTH = 6.2; // where the side rails sit
 export const SPAWN_Z = -95; // where new objects appear
@@ -37,7 +39,8 @@ export function createState() {
       active: false, x: 0, z: 0, w: 1, h: 1, d: 1
     })),
     orbs: Array.from({ length: ORB_POOL }, () => ({ active: false, x: 0, z: 0 })),
-    events: [] // one-shot events consumed by effects (hit / pickup)
+    events: [], // one-shot events consumed by effects (hit / pickup)
+    ...createCombat()
   };
 }
 

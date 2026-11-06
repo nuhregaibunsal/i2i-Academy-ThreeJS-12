@@ -5,6 +5,7 @@ import { Bloom, EffectComposer, Vignette } from "@react-three/postprocessing";
 import { GameLoop, Floor, Mountains, Obstacles, Orbs, Particles, Rails, Ship, Sky, Sun } from "./game/World.jsx";
 import { LANE_LIMIT, MAX_LIVES, createState, resetState } from "./game/state.js";
 import { sfx } from "./game/audio.js";
+import { Boss, Bullets, Enemies, EnemyShots, Pickups, ShieldBubble } from "./game/Combat.jsx";
 import Hud from "./Hud.jsx";
 
 const BEST_KEY = "driftline-best";
@@ -27,8 +28,12 @@ function saveBest(value) {
 
 export default function App() {
   const state = useMemo(() => createState(), []);
+  if (import.meta.env.DEV) window.__driftline = state; // test hook, stripped from production builds
   const [phase, setPhase] = useState("menu"); // menu | playing | paused | over
-  const [hud, setHud] = useState({ score: 0, multiplier: 1, streak: 0, lives: MAX_LIVES, speed: 0, progress: 0 });
+  const [hud, setHud] = useState({
+    score: 0, multiplier: 1, streak: 0, lives: MAX_LIVES, speed: 0, progress: 0,
+    weapon: 1, rapid: 0, shield: false, kills: 0, boss: null, toast: null
+  });
   const [best, setBest] = useState(loadBest);
   const [newBest, setNewBest] = useState(false);
   const [muted, setMuted] = useState(false);
@@ -38,7 +43,7 @@ export default function App() {
   const start = useCallback(() => {
     resetState(state);
     setNewBest(false);
-    setHud((h) => ({ ...h, score: 0, multiplier: 1, streak: 0, lives: MAX_LIVES }));
+    setHud((h) => ({ ...h, score: 0, multiplier: 1, streak: 0, lives: MAX_LIVES, weapon: 1, rapid: 0, shield: false, kills: 0, boss: null, toast: null }));
     setPhase("playing");
     sfx.start();
   }, [state]);
@@ -141,7 +146,13 @@ export default function App() {
         <Rails />
         <Obstacles state={state} />
         <Orbs state={state} />
+        <Enemies state={state} />
+        <Boss state={state} />
+        <Pickups state={state} />
+        <Bullets state={state} />
+        <EnemyShots state={state} />
         <Ship state={state} phase={phase} />
+        <ShieldBubble state={state} />
         <Particles state={state} phase={phase} />
         <GameLoop state={state} phase={phase} onHud={setHud} onGameOver={handleGameOver} />
 
