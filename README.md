@@ -4,7 +4,7 @@ A synthwave endless runner and shooter built with **React Three Fiber**. Steer y
 glowing grid, thread through walls, blast enemy swarms, power up your weapon and take down the
 Sentinel boss — all while the speed keeps climbing.
 
-**▶ [Play it live](https://nuhregaibunsal.github.io/i2i-Academy-ThreeJS-12/)** — works on desktop and mobile.
+**▶ [Play it live](https://nuhregaibunsal.github.io/driftline/)** — works on desktop and mobile.
 
 <p align="center">
   <img src="docs/gameplay.png" alt="Gameplay" width="49%" />
@@ -48,7 +48,7 @@ npm install
 npm run dev
 ```
 
-Then open the printed local URL (default: http://localhost:5173/i2i-Academy-ThreeJS-12/).
+Then open the printed local URL (default: http://localhost:5173/driftline/).
 
 ## Project structure
 

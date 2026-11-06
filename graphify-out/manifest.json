@@ -60,9 +60,9 @@
     "semantic_hash": ""
   },
   "src/game/World.jsx": {
-    "mtime": 1793925446.040794,
-    "seen": 1793925789.9921782,
-    "ast_hash": "dcef1401fd1b71d2b3f1275185a654b1",
+    "mtime": 1793925907.4273515,
+    "seen": 1793926166.6210752,
+    "ast_hash": "96fa6a059a60e51356f19ef761d398c5",
     "semantic_hash": ""
   },
   "src/Hud.jsx": {
@@ -72,9 +72,9 @@
     "semantic_hash": ""
   },
   "src/game/combat.js": {
-    "mtime": 1793925661.2744102,
-    "seen": 1793925789.9921806,
-    "ast_hash": "757c9faa84eb6e5d9375294bacf4c077",
+    "mtime": 1793925907.4258075,
+    "seen": 1793926166.6210794,
+    "ast_hash": "87da22da3681166c0890b98883c084a7",
     "semantic_hash": ""
   },
   "docs/menu.png": {
@@ -84,9 +84,9 @@
     "semantic_hash": ""
   },
   "src/game/Combat.jsx": {
-    "mtime": 1793925661.2284937,
-    "seen": 1793925789.992176,
-    "ast_hash": "7419a5586191495e235842b46a8bdb8e",
+    "mtime": 1793925933.4308426,
+    "seen": 1793926166.6210706,
+    "ast_hash": "e9b35640d951c30797eb1cabad781ffd",
     "semantic_hash": ""
   }
 }
